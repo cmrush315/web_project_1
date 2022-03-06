@@ -127,6 +127,7 @@
   justify-content: space-between;
   row-gap: 40px;
   list-style: none;
+  padding: 0;
 }
 
 .card {
@@ -207,18 +208,16 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
-  width: 24px;
-  height: 24px;
 }
 
 .event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
-  width: 24px;
-  height: 24px;
 }
 
 .event-info__text {
@@ -263,31 +262,26 @@
 }
 
 .person_name_feynman {
-  position: absolute;
   top: -30px;
   left: 319px;
 }
 
 .person_name_burbidge {
-  position: absolute;
   top: 96px;
   right: 125px;
 }
 
 .person_name_cannon {
-  position: absolute;
   bottom: 18px;
   right: 216px;
 }
 
 .person_name_mitchell {
-  position: absolute;
   bottom: 82px;
   left: 142px;
 }
 
 .person_name_tarter {
-  position: absolute;
   top: 79px;
   left: 159px;
 }
@@ -368,7 +362,7 @@
   position: relative;
   box-sizing: border-box;
   display: flex;
-  column-gap: -100px;
+  column-gap: 120px;
 }
 
 .about__title {
@@ -386,11 +380,15 @@
   font-weight: 400;
   max-width: 660px;
   z-index: 2;
-  margin: 0 120px;
+  margin: 0;
 }
 
 .about__paragraph {
   margin: 0 0 35px 0;
+}
+
+.about__paragraph:nth-of-type(3) {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -442,7 +440,7 @@
 }
 
 .footer__column-heading {
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 }
 
 .footer__column-link {
