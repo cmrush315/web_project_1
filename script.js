@@ -27,11 +27,21 @@ class LinkedList {
   insertFirst(value) {
     this.insertAt(0, value);
   }
+  insertAt(index, value) {
+    const previousNode = this.nodes[index - 1] || null;
+    const nextNode = this.nodes[index] || null;
+    const node = { value, next: nextNode };
 
+    if (previousNode) previousNode.next = node;
+    this.insertAt(0, value);
+  }
   insertLast(value) {
     this.insertAt(this.size, value);
   }
-
+  removeAt(index) {
+    const previousNode = this.nodes[index - 1];
+    const nextNode = this.nodes[index + 1] || null;
+  }
   getAt(index) {
     return this.nodes[index];
   }

@@ -101,7 +101,8 @@
 .staff {
   padding-top: 100px;
   padding-bottom: 140px;
-  background-color: #f2f2f2;
+  background-image: linear-gradient(#1f69c9, #0e2f59);
+  background-color: #0e2f59;
 }
 
 .staff__title {
@@ -109,6 +110,7 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
+  color: #fff;
 }
 
 .staff__subtitle {
@@ -117,6 +119,7 @@
   line-height: 30px;
   font-weight: 400;
   margin: 24px 0 0;
+  color: #fff;
 }
 
 .staff__cards {
@@ -131,7 +134,8 @@
 }
 
 .card {
-  background-color: #fff;
+  background-color: #f2f2f2;
+  border: 1px solid #666;
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
